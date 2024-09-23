@@ -1,0 +1,40 @@
+<div class="text-center header">
+  <h1 class="text-center header-text">Login</h1>
+</div>
+<div class="container">
+    <div class="signup-form"></div>
+        <form action="/petshop/login" class="p-2" method="post">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fa fa-id-card"></i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" name="login" placeholder="Login" required="required"> 
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fa fa-id-card"></i>
+                        </span>
+                    </div>
+                    <input type="password" class="form-control" name="senha" placeholder="Senha" required="required">
+                </div>
+            </div>
+            {{#if message}}
+                <div class="form-group" style="width: {{message.width}};">
+                    <div class="alert alert-danger" role="alert">
+                        {{message.descricao}}
+                    </div>
+                </div>
+            {{/if}}
+            <div class="form-group">
+                <button type="submit" class="btn-form text-center btn-primary btn-lg">Login</button>
+            </div> 
+        </form>
+    </div>
+</div>
+

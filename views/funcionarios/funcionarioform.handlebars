@@ -1,0 +1,83 @@
+<div class=" text-center header">
+  <h1 class="text-center header-text">Cadastrar Funcionario</h1>
+</div>
+<div class="signup-form">
+    <form action="/funcionarios/add" class="p-2" method="post">
+        <p>Preencha o formulário para cadastrar um Funcionario</p>
+        <hr>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <span class="fa fa-paw"></span>
+                    </span>
+                </div>
+                <input type="text" class="form-control" name="nome" placeholder="Nome" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-user"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control" name="sobrenome" placeholder="Sobrenome" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-calendar"></i>
+                    </span>
+                </div>
+                <input type="date" class="form-control" name="dataNascimento" placeholder="Data de Nascimento"
+                    required="required">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-id-card"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control" name="cpf" placeholder="CPF" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-id-card"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control" name="funcao" placeholder="Função" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-id-card"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control" name="login" placeholder="Login" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-id-card"></i>
+                    </span>
+                </div>
+                <input type="password" class="form-control" name="senha" placeholder="Senha" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn-form text-center btn-primary btn-lg">Cadastrar</button>
+        </div> 
+    </form>
+</div>
